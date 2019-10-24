@@ -62,18 +62,20 @@ p::after{
   position:relative;
   top:15px;
 }
+$s1:"";
+@for $1 from 1 through 400{
+  $s1 :$s1 +random(1000)* 0.1vw +""+ random(1000)*0.1vh* +""+ 0 +""+ random(50)*0.01rem + #fff;
+  @if $i <400 {
+    $s1: $s1 +",";
+  }
+}
 .layer1{
   width: 1.5em;
   height:1.5em;
   box-shadow:
   filter:blur(1.5px);
+  box-shadow:#($s1);
 }
-$s1:"";
-@for $1 from 1 through 400[]
-  $%1= $%1 random(1000)*0.1vw + "" +random(1000)*0.1vh* --+0.01em+ #ffff;
-@lf $1<400
-$%1: $
-  ]
 
 .snow{
   border-radius:50%;
