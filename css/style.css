@@ -1,3 +1,37 @@
 body{
   background: #e0e0e0;
+  display: -webkit-box;
+  display: -ms-flexbot;
+  display:flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+section{
+  width:50vw;
+  height:50vh;
+  background: #ffffff;
+  box-shadow:5px 5px 10px #999;
+}
+p{
+  position:relative;
+  top:1%;
+  margin-left: -2%;
+  margin-right: +2%;
+  padding:5%;
+  background: #9c27b0;
+  color:#fff;
+  font-size:1.5em;
+  text-transform: uppercase;
+  box-shadow:1px 1px 2px #333;
+}
+p::after{
+  content:"";
+  position:absolute;
+  width:0;
+  height:0;
+  left:0;
+  top:100%;
+  border-right:2vh solid #8e24aa;
+  border-bottom:2vh solid transparent;
 }
