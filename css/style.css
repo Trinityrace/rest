@@ -38,3 +38,20 @@ p::after{
   border-left:0 solid #8e24aa;
   border-bottom:2vh solid transparent;
 }
+.wrapper{
+  width:100vw;
+  height: 100vh;
+}
+.navbar{
+  position:;
+  width:;
+  opacity:;
+  height:;
+  left:;
+  font-family:'franklin gothic medium',"arial narrow";
+  font-size:;
+  text-align:;
+  color:;
+  background:;
+  background-size:50px;
+}
