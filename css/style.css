@@ -10,6 +10,8 @@ body{
 section{
   width:50vw;
   height:50vh;
+  padding:10px;
+  margin:2px;
   background: #ffffff;
   box-shadow:5px 5px 10px #999;
 }
@@ -39,8 +41,9 @@ p::after{
   border-bottom:2vh solid transparent;
 }
 .wrapper{
-  width:100vw;
-  height: 100vh;
+  width:50%;
+  height: 150vh;
+  background: radial-gradient(farhest-corner at 10vw 2ovh,#555555 1%,#9c27b0 10px);
 }
 .navbar{
   position:;
@@ -53,5 +56,27 @@ p::after{
   text-align:;
   color:;
   background:;
-  background-size:50px;
+  background-size:100px;
+}
+.navbar span{
+  position:relative;
+  top:15px;
+}
+.layer1{
+  width: 1.5em;
+  height:1.5em;
+  box-shadow:
+  filter:blur(1.5px);
+}
+$s1:"";
+@for $1 from 1 through 400[]
+  $%1= $%1 random(1000)*0.1vw + "" +random(1000)*0.1vh* --+0.01em+ #ffff;
+@lf $1<400
+$%1: $
+  ]
+
+.snow{
+  border-radius:50%;
+  opacity:0.8;
+
 }
